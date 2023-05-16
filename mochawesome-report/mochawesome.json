@@ -5,9 +5,21 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
+<<<<<<< HEAD
     "start": "2023-05-16T08:22:46.429Z",
     "end": "2023-05-16T08:22:57.410Z",
     "duration": 10981,
+=======
+<<<<<<< HEAD
+    "start": "2023-05-16T08:09:56.415Z",
+    "end": "2023-05-16T08:10:09.975Z",
+    "duration": 13560,
+=======
+    "start": "2023-05-16T08:09:11.682Z",
+    "end": "2023-05-16T08:09:38.838Z",
+    "duration": 27156,
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,45 +30,113 @@
   },
   "results": [
     {
+<<<<<<< HEAD
       "uuid": "7defe7d1-01a3-4d08-a298-f641193b9955",
       "title": "",
       "fullFile": "/Users/akirit/Documents/repos/LumaSeleniumTesting/test/SortByPrice.js",
       "file": "/test/SortByPrice.js",
+=======
+<<<<<<< HEAD
+      "uuid": "a56a1b57-99ff-4ba8-a2e4-66737debaa19",
+      "title": "",
+      "fullFile": "C:\\Sanober\\github\\LumaSeleniumTesting\\test\\EmailValidation.js",
+      "file": "\\test\\EmailValidation.js",
+=======
+      "uuid": "dbcc8cc6-6a72-4dc5-9a53-61825d5d3667",
+      "title": "",
+      "fullFile": "C:\\Users\\Hari\\Repositories\\LumaSeleniumTesting\\test\\shilpika.js",
+      "file": "\\test\\shilpika.js",
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
+<<<<<<< HEAD
           "uuid": "47098020-751c-4616-86dc-891c87970b93",
           "title": "Sort by Price",
           "fullFile": "/Users/akirit/Documents/repos/LumaSeleniumTesting/test/SortByPrice.js",
           "file": "/test/SortByPrice.js",
+=======
+<<<<<<< HEAD
+          "uuid": "8a45da58-4e7d-4a9c-84c6-dad2a8abff0a",
+          "title": "login test",
+          "fullFile": "C:\\Sanober\\github\\LumaSeleniumTesting\\test\\EmailValidation.js",
+          "file": "\\test\\EmailValidation.js",
+=======
+          "uuid": "2215dc86-4cf0-41ae-a0ff-e8610b7e1206",
+          "title": "Search for a product of particular color",
+          "fullFile": "C:\\Users\\Hari\\Repositories\\LumaSeleniumTesting\\test\\shilpika.js",
+          "file": "\\test\\shilpika.js",
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [],
           "suites": [
             {
+<<<<<<< HEAD
               "uuid": "aa0abe85-3a20-4a09-90fe-e826812ef5b9",
               "title": "Search for shirts in search bar and perfom sorting",
               "fullFile": "/Users/akirit/Documents/repos/LumaSeleniumTesting/test/SortByPrice.js",
               "file": "/test/SortByPrice.js",
+=======
+<<<<<<< HEAD
+              "uuid": "fb4bbcfd-9581-4593-b1a6-333015b4270d",
+              "title": "I click on login and enter my credentials",
+              "fullFile": "C:\\Sanober\\github\\LumaSeleniumTesting\\test\\EmailValidation.js",
+              "file": "\\test\\EmailValidation.js",
+=======
+              "uuid": "6837c412-6588-4b97-922e-b5ef2d35329d",
+              "title": "Given a user is on the search page",
+              "fullFile": "C:\\Users\\Hari\\Repositories\\LumaSeleniumTesting\\test\\shilpika.js",
+              "file": "\\test\\shilpika.js",
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
               "beforeHooks": [],
               "afterHooks": [],
               "tests": [
                 {
+<<<<<<< HEAD
                   "title": "I see the shirts in sorted order",
                   "fullTitle": "Sort by Price Search for shirts in search bar and perfom sorting I see the shirts in sorted order",
                   "timedOut": null,
                   "duration": 10678,
+=======
+<<<<<<< HEAD
+                  "title": "I should be logged in and see my profile",
+                  "fullTitle": "login test I click on login and enter my credentials I should be logged in and see my profile",
+                  "timedOut": null,
+                  "duration": 12586,
+=======
+                  "title": "should show the shirt of preferred color",
+                  "fullTitle": "Search for a product of particular color Given a user is on the search page should show the shirt of preferred color",
+                  "timedOut": null,
+                  "duration": 26858,
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
                   "fail": false,
                   "pending": false,
                   "context": null,
+<<<<<<< HEAD
                   "code": "// Start web browser\nconst driver = await new Builder().forBrowser('firefox').build();\ntry{\n            await driver.get('https://magento.softwaretestingboard.com/');\n            // Get the search input\n            await driver.wait(until.elementLocated(By.css('#search')), 1000);\n            await driver.findElement(By.id('search')).sendKeys('shirt', Key.RETURN);\n            \n            // await driver.sleep(100);\n            //get the sort element and displaying Sort By       \n            await driver.wait(until.elementLocated(By.css('.toolbar-sorter')),10000);\n            let data=await driver.findElement(By.css('.toolbar-sorter'));\n            let value =await data.findElement(By.css('.sorter-label'));\n            let display=await value.getText();\n            console.log(display);\n            //document.querySelector('.products >li:nth-child(2)');---selecting the 2 child\n            //document.querySelector('.product > strong:first-child')--gettinng the product text\n            await driver.wait(until.elementLocated(By.css('.products')),10000);\n            await driver.findElement(By.css('.products'));\n            let valuesort =await driver.findElement(By.css('.products >li:nth-child(2)'));\n            //console.log(valuesort);\n            await driver.wait(until.elementLocated(By.css('.product')),10000);\n            await driver.findElement(By.css('.product'));\n           // await valuesort.findElement(By.css('.product > strong:first-child')).getText();\n        \n            let sor= await valuesort.findElement(By.css('.product > strong:first-child')).getText();\n            //let displaysort=await value.getText();\n           console.log(sor);\n            await driver.sleep(2000);\n            //price selecting\n            await driver.wait(until.elementLocated(By.css('.sorter-options')),10000);\n            let price=await driver.findElement(By.css('.sorter-options'));\n            await driver.sleep(1000);\n            await driver.findElement(By.css('.sorter-options > option:nth-child(2)')).click();\n            \n           //assert.equal(sor,'Circe Hooded Ice Fleecee'); // Builtin Node\n            //expect(sor).to.equal('Circe Hooded Ice Fleecee'); // Chai expect\n           // console.log('${Shirts are sorted by descending Price and the first one is}');\n            sor.should.equal('Circe Hooded Ice Fleece'); // Chai should\n            //console.log('Shirts are sorted by descending Price and the first one is');\n         \n           // console.log(sor);\n           // console.log(sor);\n           \n           //await driver.quit();\n}\ncatch(error)\n{\n    console.log(error);\n}\nfinally{\n   \n   // await driver.quit();\n}",
                   "err": {},
                   "uuid": "d44e3f8f-2501-4905-aa51-4a246d26cb85",
+=======
+<<<<<<< HEAD
+                  "code": "const driver= await new Builder().forBrowser('firefox').build();\n            try{\n                await driver.get('http://magento.softWaretestingboard.com');\n                await driver.findElement(By.css('.authorization-link > a:nth-child(1)')).click();\n              \n                await driver.wait(until.elementLocated(By.id('email')),10000);\n                await driver.findElement(By.id('email')).sendKeys(user);\n                await driver.findElement(By.id('pass')).sendKeys(pass);\n                await driver.findElement(By.css('#send2')).click();\n                await driver.sleep(1000);\n                await driver.wait(until.elementLocated(By.css('.action.switch')),200000);\n                await driver.findElement(By.css('.action.switch')).click();\n                await driver.wait(until.elementLocated(By.css('a[href=\"https://magento.softwaretestingboard.com/customer/account/\"]')),10000)\n                await driver.findElement(By.css('a[href$=\"/customer/account/\"]')).click();\n            \n                await driver.wait(until.elementLocated(By.css('.box-information .box-content p')), 10000);\n                let information = await driver.findElement(By.css('.box-information .box-content p')).getText();\n                \n               // console.log(information.should.contain(user));\n             \n            }\n            catch(error){\n                it('this test should be pending');\n            }\n            finally{\n               \n                //await driver.quit();\n            }",
+                  "err": {},
+                  "uuid": "c9578eb8-4f36-46c7-8702-ad73d21fb8ca",
+=======
+                  "code": "//start the webbrowser\nconst driver = await new Builder().forBrowser('firefox').build();\n//Search for a product\ntry {\n    //Move to magento site\n    await driver.get('https://magento.softwaretestingboard.com/');\n    //Get the search input\n    await driver.wait(until.elementLocated(By.css('#search')), 50000);\n    await driver.findElement(By.id('search')).sendKeys('shirt for men', Key.RETURN);\n    // Scroll down a bit\n    await driver.wait(until.elementsLocated(By.css('.item.product.product-item')), 50000);\n    await driver.executeScript('document.querySelector(\".item.product.product-item\").scrollIntoView();');\n    //Find the first product\n    await driver.wait(until.elementLocated(By.css('.item.product.product-item:first-child')), 50000);\n    const product = await driver.findElement(By.css('.item.product.product-item:first-child'));\n\n\n\n    //find the information in the product we selected\n    await driver.wait(until.elementLocated(By.css('.swatch-attribute.color')), 50000);\n    let swatchColors = await product.findElement(By.css('.swatch-attribute.color'));\n    let productColor1 = await swatchColors.findElement(By.css('div[index=\"1\"]'));\n    productColor1.click();\n    console.log(\"Choose orange color shirt\");\n\n    productColor2 = await swatchColors.findElement(By.css('div[index=\"2\"]'));\n    await driver.sleep(5000);\n    setTimeout(() => {\n        productColor2.click().then(() => {\n            console.log(\"Choose purple color shirt\");\n        });\n    }, 5000);\n\n\n    productColor3 = await swatchColors.findElement(By.css('div[index=\"0\"]'));\n    await driver.sleep(5000);\n    setTimeout(() => {\n        productColor3.click().then(() => {\n            console.log(\"Choose blue color shirt\");\n        });\n    }, 5000);\n    await driver.sleep(10000);\n    //Asserts\n    assert.equal(productColor1, 'Orange'); //Builtin Node\n    expect(productColor1).to.equal('Orange'); // Chai expect\n    productColor1.should.equal('Orange'); // Chai should\n    assert.equal(productColor2, 'Purple'); //Builtin Node\n    expect(productColor2).to.equal('Purple'); // Chai expect\n    productColor2.should.equal('Purple'); // Chai should\n    assert.equal(productColor3, 'Blue'); //Builtin Node\n    expect(productColor3).to.equal('Blue'); // Chai expect\n    productColor3.should.equal('Blue'); // Chai should\n\n\n\n} catch (Exception) {\n} finally {\n    await driver.quit();\n}",
+                  "err": {},
+                  "uuid": "5494a857-5ed7-441b-9adf-07d625bf27e8",
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
                   "parentUUID": null,
                   "isHook": false,
                   "skipped": false
@@ -64,12 +144,28 @@
               ],
               "suites": [],
               "passes": [
+<<<<<<< HEAD
                 "d44e3f8f-2501-4905-aa51-4a246d26cb85"
+=======
+<<<<<<< HEAD
+                "c9578eb8-4f36-46c7-8702-ad73d21fb8ca"
+=======
+                "5494a857-5ed7-441b-9adf-07d625bf27e8"
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
+<<<<<<< HEAD
               "duration": 10678,
+=======
+<<<<<<< HEAD
+              "duration": 12586,
+=======
+              "duration": 26858,
+>>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+>>>>>>> f77e880303b8a21f1fea2b6fef90334dc7fc9cb3
               "root": false,
               "rootEmpty": false,
               "_timeout": null
