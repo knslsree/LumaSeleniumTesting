@@ -5,15 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-<<<<<<< HEAD
-    "start": "2023-05-16T08:09:56.415Z",
-    "end": "2023-05-16T08:10:09.975Z",
-    "duration": 13560,
-=======
-    "start": "2023-05-16T08:09:11.682Z",
-    "end": "2023-05-16T08:09:38.838Z",
-    "duration": 27156,
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+    "start": "2023-05-16T08:23:18.429Z",
+    "end": "2023-05-16T08:23:57.604Z",
+    "duration": 39175,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -24,79 +18,45 @@
   },
   "results": [
     {
-<<<<<<< HEAD
-      "uuid": "a56a1b57-99ff-4ba8-a2e4-66737debaa19",
+      "uuid": "4a0d8cf8-275d-45eb-a094-84691ae388ab",
       "title": "",
-      "fullFile": "C:\\Sanober\\github\\LumaSeleniumTesting\\test\\EmailValidation.js",
-      "file": "\\test\\EmailValidation.js",
-=======
-      "uuid": "dbcc8cc6-6a72-4dc5-9a53-61825d5d3667",
-      "title": "",
-      "fullFile": "C:\\Users\\Hari\\Repositories\\LumaSeleniumTesting\\test\\shilpika.js",
-      "file": "\\test\\shilpika.js",
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+      "fullFile": "D:\\Sravani\\Testare\\Lumaproject\\LumaSeleniumTesting\\test\\sravanicategory.js",
+      "file": "\\test\\sravanicategory.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-<<<<<<< HEAD
-          "uuid": "8a45da58-4e7d-4a9c-84c6-dad2a8abff0a",
-          "title": "login test",
-          "fullFile": "C:\\Sanober\\github\\LumaSeleniumTesting\\test\\EmailValidation.js",
-          "file": "\\test\\EmailValidation.js",
-=======
-          "uuid": "2215dc86-4cf0-41ae-a0ff-e8610b7e1206",
-          "title": "Search for a product of particular color",
-          "fullFile": "C:\\Users\\Hari\\Repositories\\LumaSeleniumTesting\\test\\shilpika.js",
-          "file": "\\test\\shilpika.js",
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+          "uuid": "0f9886fa-9b4e-4990-8f8e-8f079171d445",
+          "title": "Sort by Category",
+          "fullFile": "D:\\Sravani\\Testare\\Lumaproject\\LumaSeleniumTesting\\test\\sravanicategory.js",
+          "file": "\\test\\sravanicategory.js",
           "beforeHooks": [],
           "afterHooks": [],
           "tests": [],
           "suites": [
             {
-<<<<<<< HEAD
-              "uuid": "fb4bbcfd-9581-4593-b1a6-333015b4270d",
-              "title": "I click on login and enter my credentials",
-              "fullFile": "C:\\Sanober\\github\\LumaSeleniumTesting\\test\\EmailValidation.js",
-              "file": "\\test\\EmailValidation.js",
-=======
-              "uuid": "6837c412-6588-4b97-922e-b5ef2d35329d",
-              "title": "Given a user is on the search page",
-              "fullFile": "C:\\Users\\Hari\\Repositories\\LumaSeleniumTesting\\test\\shilpika.js",
-              "file": "\\test\\shilpika.js",
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+              "uuid": "75476f01-7a67-46c4-96f5-65799c850452",
+              "title": "I searched for the category",
+              "fullFile": "D:\\Sravani\\Testare\\Lumaproject\\LumaSeleniumTesting\\test\\sravanicategory.js",
+              "file": "\\test\\sravanicategory.js",
               "beforeHooks": [],
               "afterHooks": [],
               "tests": [
                 {
-<<<<<<< HEAD
-                  "title": "I should be logged in and see my profile",
-                  "fullTitle": "login test I click on login and enter my credentials I should be logged in and see my profile",
+                  "title": "I should see the sorted order of a category",
+                  "fullTitle": "Sort by Category I searched for the category I should see the sorted order of a category",
                   "timedOut": null,
-                  "duration": 12586,
-=======
-                  "title": "should show the shirt of preferred color",
-                  "fullTitle": "Search for a product of particular color Given a user is on the search page should show the shirt of preferred color",
-                  "timedOut": null,
-                  "duration": 26858,
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+                  "duration": 38270,
                   "state": "passed",
                   "speed": "slow",
                   "pass": true,
                   "fail": false,
                   "pending": false,
                   "context": null,
-<<<<<<< HEAD
-                  "code": "const driver= await new Builder().forBrowser('firefox').build();\n            try{\n                await driver.get('http://magento.softWaretestingboard.com');\n                await driver.findElement(By.css('.authorization-link > a:nth-child(1)')).click();\n              \n                await driver.wait(until.elementLocated(By.id('email')),10000);\n                await driver.findElement(By.id('email')).sendKeys(user);\n                await driver.findElement(By.id('pass')).sendKeys(pass);\n                await driver.findElement(By.css('#send2')).click();\n                await driver.sleep(1000);\n                await driver.wait(until.elementLocated(By.css('.action.switch')),200000);\n                await driver.findElement(By.css('.action.switch')).click();\n                await driver.wait(until.elementLocated(By.css('a[href=\"https://magento.softwaretestingboard.com/customer/account/\"]')),10000)\n                await driver.findElement(By.css('a[href$=\"/customer/account/\"]')).click();\n            \n                await driver.wait(until.elementLocated(By.css('.box-information .box-content p')), 10000);\n                let information = await driver.findElement(By.css('.box-information .box-content p')).getText();\n                \n               // console.log(information.should.contain(user));\n             \n            }\n            catch(error){\n                it('this test should be pending');\n            }\n            finally{\n               \n                //await driver.quit();\n            }",
+                  "code": "// Launch the web browser\nconst driver = await new Builder().forBrowser('firefox').build();\ntry{\n    //Navigate to our application\n    await driver.get('https://magento.softwaretestingboard.com/');\n     //Find the first category  'whats New'\n     await driver.wait(until.elementLocated(By.css('.ui-menu-item')), 20000);\n     await driver.findElement(By.css('.ui-menu-item > a:nth-child(1)')).click();\n    await driver.navigate().back();\n     await driver.sleep(2000);\n     //Find the second category Women \n     await driver.wait(until.elementLocated(By.css('.parent.ui-menu-item')), 20000);\n     await driver.findElement(By.css('.parent.ui-menu-item > a:nth-child(1)')).click();\n     //Find the subcategory tops in women\n     await driver.wait(until.elementLocated(By.xpath(\"//a[contains(text(),'Tops')]\")), 20000);\n     await driver.findElement(By.xpath(\"//a[contains(text(),'Tops')]\")).click();\n     await driver.wait(until.elementLocated(By.css('.base')), 10000);\n     let womenTops = await driver.findElement(By.css('.base')).getText();\n     console.log(womenTops);\n     await driver.navigate().back();\n     //Find the subcategory bottoms in women\n     await driver.wait(until.elementLocated(By.xpath(\"//a[contains(text(),'Bottoms')]\")), 20000);\n     await driver.findElement(By.xpath(\"//a[contains(text(),'Bottoms')]\")).click();\n     await driver.wait(until.elementLocated(By.css('.base')), 10000);\n     let womenBottoms = await driver.findElement(By.css('.base')).getText();\n     console.log(womenBottoms);\n     await driver.sleep(2000);\n    await driver.navigate().back();\n    \n    //Find the third category Women  \n    await driver.wait(until.elementLocated(By.css('a[href$=\"/men.html\"]')),10000);\n     await driver.findElement(By.css('a[href$=\"/men.html\"]')).click();\n     //Find the subcategory tops in men\n     await driver.wait(until.elementLocated(By.xpath(\"//a[contains(text(),'Tops')]\")), 20000);\n     await driver.findElement(By.xpath(\"//a[contains(text(),'Tops')]\")).click();\n     await driver.wait(until.elementLocated(By.css('.base')), 10000);\n     let menTops = await driver.findElement(By.css('.base')).getText();\n     console.log(menTops);\n     await driver.sleep(2000);\n     await driver.navigate().back();\n     \n    //Find the subcategory bottoms in men\n     await driver.wait(until.elementLocated(By.xpath(\"//a[contains(text(),'Bottoms')]\")), 20000);\n     await driver.findElement(By.xpath(\"//a[contains(text(),'Bottoms')]\")).click();\n     await driver.wait(until.elementLocated(By.css('.base')), 10000);\n     let menBottoms = await driver.findElement(By.css('.base')).getText();\n     console.log(menBottoms);\n     await driver.sleep(2000);\n     //Asserts\n    assert.equal(womenTops, 'Tops');//Builtin Node\n    expect(womenTops).to.equal('Tops');// Chai expect\n    womenTops.should.equal('Tops');// Chai should\n    assert.equal(womenBottoms, 'Bottoms');//Builtin Node\n    expect(womenBottoms).to.equal('Bottoms');// Chai expect\n    womenBottoms.should.equal('Bottoms');// Chai should\n                \n    assert.equal(menTops, 'Tops');//Builtin Node\n    expect(menTops).to.equal('Tops');// Chai expect\n    menTops.should.equal('Tops');// Chai should\n                \n    assert.equal(menBottoms, 'Bottoms');//Builtin Node\n    expect(menBottoms).to.equal('Bottoms');// Chai expect\n    menBottoms.should.equal('Bottoms');// Chai should\n                \n                \n     //await driver.quit();\n     }catch(error)\n     {\n    console.log(error);\n    }\n    finally{\n   \n     await driver.quit();\n     }",
                   "err": {},
-                  "uuid": "c9578eb8-4f36-46c7-8702-ad73d21fb8ca",
-=======
-                  "code": "//start the webbrowser\nconst driver = await new Builder().forBrowser('firefox').build();\n//Search for a product\ntry {\n    //Move to magento site\n    await driver.get('https://magento.softwaretestingboard.com/');\n    //Get the search input\n    await driver.wait(until.elementLocated(By.css('#search')), 50000);\n    await driver.findElement(By.id('search')).sendKeys('shirt for men', Key.RETURN);\n    // Scroll down a bit\n    await driver.wait(until.elementsLocated(By.css('.item.product.product-item')), 50000);\n    await driver.executeScript('document.querySelector(\".item.product.product-item\").scrollIntoView();');\n    //Find the first product\n    await driver.wait(until.elementLocated(By.css('.item.product.product-item:first-child')), 50000);\n    const product = await driver.findElement(By.css('.item.product.product-item:first-child'));\n\n\n\n    //find the information in the product we selected\n    await driver.wait(until.elementLocated(By.css('.swatch-attribute.color')), 50000);\n    let swatchColors = await product.findElement(By.css('.swatch-attribute.color'));\n    let productColor1 = await swatchColors.findElement(By.css('div[index=\"1\"]'));\n    productColor1.click();\n    console.log(\"Choose orange color shirt\");\n\n    productColor2 = await swatchColors.findElement(By.css('div[index=\"2\"]'));\n    await driver.sleep(5000);\n    setTimeout(() => {\n        productColor2.click().then(() => {\n            console.log(\"Choose purple color shirt\");\n        });\n    }, 5000);\n\n\n    productColor3 = await swatchColors.findElement(By.css('div[index=\"0\"]'));\n    await driver.sleep(5000);\n    setTimeout(() => {\n        productColor3.click().then(() => {\n            console.log(\"Choose blue color shirt\");\n        });\n    }, 5000);\n    await driver.sleep(10000);\n    //Asserts\n    assert.equal(productColor1, 'Orange'); //Builtin Node\n    expect(productColor1).to.equal('Orange'); // Chai expect\n    productColor1.should.equal('Orange'); // Chai should\n    assert.equal(productColor2, 'Purple'); //Builtin Node\n    expect(productColor2).to.equal('Purple'); // Chai expect\n    productColor2.should.equal('Purple'); // Chai should\n    assert.equal(productColor3, 'Blue'); //Builtin Node\n    expect(productColor3).to.equal('Blue'); // Chai expect\n    productColor3.should.equal('Blue'); // Chai should\n\n\n\n} catch (Exception) {\n} finally {\n    await driver.quit();\n}",
-                  "err": {},
-                  "uuid": "5494a857-5ed7-441b-9adf-07d625bf27e8",
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+                  "uuid": "6cd53615-2e87-48ce-af01-86b148a1eba7",
                   "parentUUID": null,
                   "isHook": false,
                   "skipped": false
@@ -104,20 +64,12 @@
               ],
               "suites": [],
               "passes": [
-<<<<<<< HEAD
-                "c9578eb8-4f36-46c7-8702-ad73d21fb8ca"
-=======
-                "5494a857-5ed7-441b-9adf-07d625bf27e8"
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+                "6cd53615-2e87-48ce-af01-86b148a1eba7"
               ],
               "failures": [],
               "pending": [],
               "skipped": [],
-<<<<<<< HEAD
-              "duration": 12586,
-=======
-              "duration": 26858,
->>>>>>> cbc22d6c5f734d3fca213e9ea180a7668273f6ca
+              "duration": 38270,
               "root": false,
               "rootEmpty": false,
               "_timeout": null
