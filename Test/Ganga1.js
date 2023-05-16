@@ -1,4 +1,4 @@
-/*const{Builder,By,Key,until, actions,WebElement} = require('selenium-webdriver');
+const{Builder,By,Key,until, actions,WebElement} = require('selenium-webdriver');
 const assert = require('assert');
 const should = require('chai').should();
 
@@ -40,7 +40,7 @@ describe ('select the product in dropdown menu in women category',async ()=>{
     //Add to Cart
     await driver.wait(until.elementLocated(By.css('#product-addtocart-button')),1000);
     const Cart = await driver.findElement(By.css('#product-addtocart-button'));
-    await Cart.click();*/
+    await Cart.click();
 
    /*//Assert the cart message
    await driver.wait(until.elementLocated(By.xpath('//div[@role="alert"]')),2000);
@@ -51,7 +51,7 @@ describe ('select the product in dropdown menu in women category',async ()=>{
    console.log(CartMessageText);
    CartMessageText.should.equals('You added Diva Gym Tee to your shopping cart.');*/
    //Find the first product
-   /*await driver.wait(until.elementLocated(By.css('.product-item:nth-child(4)')),4000);
+   await driver.wait(until.elementLocated(By.css('.product-item:nth-child(4)')),4000);
    const product = await driver.findElement(By.css('.product-item:nth-child(4)'));
 
    // Find information in the product we selected
@@ -71,4 +71,4 @@ describe ('select the product in dropdown menu in women category',async ()=>{
    // await driver.quit();
 }
     });
-  });*/
+  });
