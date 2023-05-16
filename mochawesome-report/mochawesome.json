@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-05-16T08:22:46.429Z",
+    "end": "2023-05-16T08:22:57.410Z",
+    "duration": 10981,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7defe7d1-01a3-4d08-a298-f641193b9955",
+      "title": "",
+      "fullFile": "/Users/akirit/Documents/repos/LumaSeleniumTesting/test/SortByPrice.js",
+      "file": "/test/SortByPrice.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "47098020-751c-4616-86dc-891c87970b93",
+          "title": "Sort by Price",
+          "fullFile": "/Users/akirit/Documents/repos/LumaSeleniumTesting/test/SortByPrice.js",
+          "file": "/test/SortByPrice.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "aa0abe85-3a20-4a09-90fe-e826812ef5b9",
+              "title": "Search for shirts in search bar and perfom sorting",
+              "fullFile": "/Users/akirit/Documents/repos/LumaSeleniumTesting/test/SortByPrice.js",
+              "file": "/test/SortByPrice.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "I see the shirts in sorted order",
+                  "fullTitle": "Sort by Price Search for shirts in search bar and perfom sorting I see the shirts in sorted order",
+                  "timedOut": null,
+                  "duration": 10678,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Start web browser\nconst driver = await new Builder().forBrowser('firefox').build();\ntry{\n            await driver.get('https://magento.softwaretestingboard.com/');\n            // Get the search input\n            await driver.wait(until.elementLocated(By.css('#search')), 1000);\n            await driver.findElement(By.id('search')).sendKeys('shirt', Key.RETURN);\n            \n            // await driver.sleep(100);\n            //get the sort element and displaying Sort By       \n            await driver.wait(until.elementLocated(By.css('.toolbar-sorter')),10000);\n            let data=await driver.findElement(By.css('.toolbar-sorter'));\n            let value =await data.findElement(By.css('.sorter-label'));\n            let display=await value.getText();\n            console.log(display);\n            //document.querySelector('.products >li:nth-child(2)');---selecting the 2 child\n            //document.querySelector('.product > strong:first-child')--gettinng the product text\n            await driver.wait(until.elementLocated(By.css('.products')),10000);\n            await driver.findElement(By.css('.products'));\n            let valuesort =await driver.findElement(By.css('.products >li:nth-child(2)'));\n            //console.log(valuesort);\n            await driver.wait(until.elementLocated(By.css('.product')),10000);\n            await driver.findElement(By.css('.product'));\n           // await valuesort.findElement(By.css('.product > strong:first-child')).getText();\n        \n            let sor= await valuesort.findElement(By.css('.product > strong:first-child')).getText();\n            //let displaysort=await value.getText();\n           console.log(sor);\n            await driver.sleep(2000);\n            //price selecting\n            await driver.wait(until.elementLocated(By.css('.sorter-options')),10000);\n            let price=await driver.findElement(By.css('.sorter-options'));\n            await driver.sleep(1000);\n            await driver.findElement(By.css('.sorter-options > option:nth-child(2)')).click();\n            \n           //assert.equal(sor,'Circe Hooded Ice Fleecee'); // Builtin Node\n            //expect(sor).to.equal('Circe Hooded Ice Fleecee'); // Chai expect\n           // console.log('${Shirts are sorted by descending Price and the first one is}');\n            sor.should.equal('Circe Hooded Ice Fleece'); // Chai should\n            //console.log('Shirts are sorted by descending Price and the first one is');\n         \n           // console.log(sor);\n           // console.log(sor);\n           \n           //await driver.quit();\n}\ncatch(error)\n{\n    console.log(error);\n}\nfinally{\n   \n   // await driver.quit();\n}",
+                  "err": {},
+                  "uuid": "d44e3f8f-2501-4905-aa51-4a246d26cb85",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d44e3f8f-2501-4905-aa51-4a246d26cb85"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 10678,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": null
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": null
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 0
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
