@@ -80,10 +80,6 @@ describe('Search for a product of particular color', () => {
                 assert.equal(productColor3, 'Blue'); //Builtin Node
                 expect(productColor3).to.equal('Blue'); // Chai expect
                 productColor3.should.equal('Blue'); // Chai should
-
-
-
-
             } catch (Exception) {
 
             } finally {
