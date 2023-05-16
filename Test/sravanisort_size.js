@@ -24,7 +24,7 @@ const expect = require('chai').expect;
                 //Select which product you want to buy
                 await driver.wait(until.elementLocated(By.css('a[href$="/radiant-tee.html"]')),10000);
                 await driver.findElement(By.css('a[href$="/radiant-tee.html"]')).click();
-                await driver.sleep(10000);
+                await driver.sleep(5000);
 
                 //Selecting the size smaller 'xS'
                 await driver.wait(until.elementLocated(By.id('option-label-size-143-item-166')),10000);
@@ -81,7 +81,7 @@ const expect = require('chai').expect;
                 expect(sizeXL ).to.equal('XL');// Chai expect
                 sizeXL.should.equal('XL');// Chai should
 
-
+                await driver.sleep(5000);
                 await driver.quit();
             }
 
@@ -91,7 +91,7 @@ const expect = require('chai').expect;
                             }
                             finally{
                                
-                               // await driver.quit();
+                               //await driver.quit();
                             }
                         });
                     });
