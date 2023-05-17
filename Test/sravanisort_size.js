@@ -31,7 +31,7 @@ const expect = require('chai').expect;
       await driver.findElement(By.id('option-label-size-143-item-166')).click();
       let sizeXS = await driver.findElement(By.xpath("(//div[@id='option-label-size-143-item-166'])[1]")).getText();
       console.log(sizeXS);
-                await driver.sleep(5000);
+      await driver.sleep(5000);
 
       //Selecting the size small 'S'
       await driver.wait(until.elementLocated(By.id('option-label-size-143-item-167')),10000);

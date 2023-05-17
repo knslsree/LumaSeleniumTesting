@@ -51,6 +51,7 @@ describe ('select the product in dropdown menu in women category',async ()=>{
    console.log(CartMessageText);
    CartMessageText.should.equals('You added Diva Gym Tee to your shopping cart.');*/
    //Find the first product
+<<<<<<< HEAD
 
 
    await driver.wait(until.elementLocated(By.css('.product-item:nth-child(4)')),4000);
@@ -59,10 +60,13 @@ describe ('select the product in dropdown menu in women category',async ()=>{
    await driver.wait(until.elementLocated(By.css('.base')),4000);
    const productTitle = await driver.findElement(By.css('.base'));
 
+=======
+
+   await driver.wait(until.elementLocated(By.css('.base')),4000);
+   const productTitle = await driver.findElement(By.css('.base'));
+>>>>>>> ee95fa8d04bcd4d85ad9bbfe2119c12a54c0502c
 
    
-   
-
    //Extract text
    let productTitleText = await productTitle.getText();
    productTitleText.should.equal('Diva Gym Tee');
