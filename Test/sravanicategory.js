@@ -11,7 +11,7 @@ const expect = require('chai').expect;
 */
 describe('Sort by Category', () => {
   // Test case:
-context('I searched for the category', () => {
+context('Search for the sorted category', () => {
   it('I should see the sorted order of a category', async () => {
     // Launch the web browser
     const driver = await new Builder().forBrowser('firefox').build();
