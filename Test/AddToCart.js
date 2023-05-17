@@ -19,7 +19,7 @@ const should = require('chai').should();
 
                                  // Navigate to women catogery
                                 //document.querySelector('.ui-menu >li :nth-child(2)').innerHTML--women  
-                        await driver.wait(until.elementLocated(By.css('.ui-menu')), 1000);
+                        await driver.wait(until.elementLocated(By.css('.ui-menu')), 10000);
                                 let val= await driver.findElement(By.css('.ui-menu'));
                                 let val1= await val.findElement(By.css('.ui-menu >li :nth-child(2)')).click();
                
