@@ -8,15 +8,15 @@ const expect = require('chai').expect;
     I want to be able to sort the item by size for a specific product, 
     so that I can easily find the item that fits.
 */
-              describe('Sort by size', () => {
-                // Test case:
-                    context('I sort the item according to size', () => {
-                        it('I should able to see the item as per the sorted size', async () => {
-                            // Launch the web browser
-                            const driver = await new Builder().forBrowser('firefox').build();
-                            try{
-                                //Navigate to the application
-                                await driver.get('https://magento.softwaretestingboard.com/');
+    describe('Sort by size', () => {
+    // Test case:
+         context('I sort the item according to size', () => {
+            it('I should able to see the item as per the sorted size', async () => {
+                // Launch the web browser
+                const driver = await new Builder().forBrowser('firefox').build();
+                try{
+                    //Navigate to the application
+                    await driver.get('https://magento.softwaretestingboard.com/');
                 // Get the search input
                 await driver.wait(until.elementLocated(By.css('#search')), 1000);
                 await driver.findElement(By.id('search')).sendKeys('shirt', Key.RETURN);
@@ -85,14 +85,14 @@ const expect = require('chai').expect;
                 await driver.quit();
             }
 
-                            catch(error)
-                            {
-                                console.log(error);
-                            }
-                            finally{
+            catch(error)
+            {
+                console.log(error);
+            }
+            finally{
                                
-                               //await driver.quit();
-                            }
-                        });
-                    });
-                });
+            //await driver.quit();
+             }
+        });
+     });
+});
