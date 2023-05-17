@@ -76,7 +76,7 @@ context('I searched for the category', () => {
         womenBottoms.should.equal('Bottoms');// Chai should
                 
 
-        assert.equal(menTops, 'Tops');//Builtin Node
+        assert.equal(menTops,'Tops');//Builtin Node
         expect(menTops).to.equal('Tops');// Chai expect
         menTops.should.equal('Tops');// Chai should
                 
