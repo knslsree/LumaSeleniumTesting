@@ -1,10 +1,5 @@
 // Includes
-const {
-    Builder,
-    By,
-    Key,
-    until
-} = require('selenium-webdriver');
+const { Builder,By,Key,until} = require('selenium-webdriver');
 const should = require('chai').should();
 
 /*  As a customer,
