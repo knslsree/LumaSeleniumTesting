@@ -1,9 +1,4 @@
-const {
-    Builder,
-    By,
-    Key,
-    until
-} = require('selenium-webdriver');
+const {Builder,By,Key,until} = require('selenium-webdriver');
 const assert = require('assert');
 const should = require('chai').should();
 const expect = require('chai').expect;
@@ -29,11 +24,13 @@ describe('Search for a product', () => {
 
                 //Get the search input
                 await driver.wait(until.elementLocated(By.css('#search')), 50000);
-                await driver.findElement(By.id('search')).sendKeys('shirt for men', Key.RETURN);
+                await driver.findElement(By.id('search')).sendKeys('shirt', Key.RETURN);
 
                 //Find the third product
                 await driver.wait(until.elementsLocated(By.css('.item.product.product-item:nth-child(3)'))), 10000;
                 const product = await driver.findElement(By.css('.item.product.product-item:nth-child(3)'));
+                await driver.sleep(5000);
+                product.click();
 
                 //find the information in the product we selected
                 let productTitle = await product.findElement(By.css('.product-item-link'));
@@ -59,11 +56,11 @@ describe('Search for a product', () => {
                 productPriceText.should.equal('$29.00'); // Chai should
 
                 console.log(productTitleText, productPriceText);
-                await driver.sleep(3000);
 
-                await driver.quit();
+            } catch (Exception) {
+
             } finally {
-                //await driver.quit();
+                await driver.quit();
             }
 
         });
