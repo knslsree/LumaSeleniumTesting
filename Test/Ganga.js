@@ -13,7 +13,8 @@ describe('Mousehover Test', function () {
   after(async function () {
     await driver.quit();
   });
-
+  context('I search for a product using mouse hover in particular category', ()=> {
+    
   it('should select a category using mouse hover', async function () {
     // Open the webpage
     await driver.get('https://magento.softwaretestingboard.com');
@@ -72,3 +73,5 @@ describe('Mousehover Test', function () {
     
   });
 });
+});
+

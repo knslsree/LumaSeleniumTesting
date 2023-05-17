@@ -5,7 +5,7 @@ const should = require('chai').should();
 describe ('select the product in dropdown menu in women category',async ()=>{
     
      
-
+    context('I search for a product', ()=> {
     
     it('I should get the product by navigating the dropdown menu in the desired category ', async ()=>{
         const driver = await new Builder().forBrowser('firefox').build();
@@ -71,3 +71,4 @@ describe ('select the product in dropdown menu in women category',async ()=>{
 }
     });
   });
+});
