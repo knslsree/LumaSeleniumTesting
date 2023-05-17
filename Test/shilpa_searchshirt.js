@@ -29,6 +29,8 @@ describe('Search for a product', () => {
                 //Find the third product
                 await driver.wait(until.elementsLocated(By.css('.item.product.product-item:nth-child(3)'))), 10000;
                 const product = await driver.findElement(By.css('.item.product.product-item:nth-child(3)'));
+                await driver.sleep(5000);
+                product.click();
 
                 //find the information in the product we selected
                 let productTitle = await product.findElement(By.css('.product-item-link'));
@@ -54,11 +56,11 @@ describe('Search for a product', () => {
                 productPriceText.should.equal('$29.00'); // Chai should
 
                 console.log(productTitleText, productPriceText);
-                await driver.sleep(3000);
 
-                await driver.quit();
+            } catch (Exception) {
+
             } finally {
-                //await driver.quit();
+                await driver.quit();
             }
 
         });
