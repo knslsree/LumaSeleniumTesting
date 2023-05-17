@@ -21,7 +21,7 @@ describe('Search for a product of particular color', () => {
                 await driver.get('https://magento.softwaretestingboard.com/');
                 //Get the search input
                 await driver.wait(until.elementLocated(By.css('#search')), 50000);
-                await driver.findElement(By.id('search')).sendKeys('shirt for men', Key.RETURN);
+                await driver.findElement(By.id('search')).sendKeys('shirt', Key.RETURN);
 
                 // Scroll down a bit
                 await driver.wait(until.elementsLocated(By.css('.item.product.product-item')), 50000);

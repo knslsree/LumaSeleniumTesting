@@ -24,7 +24,7 @@ describe('Search for a product', () => {
 
                 //Get the search input
                 await driver.wait(until.elementLocated(By.css('#search')), 50000);
-                await driver.findElement(By.id('search')).sendKeys('shirt for men', Key.RETURN);
+                await driver.findElement(By.id('search')).sendKeys('shirt', Key.RETURN);
 
                 //Find the third product
                 await driver.wait(until.elementsLocated(By.css('.item.product.product-item:nth-child(3)'))), 10000;
