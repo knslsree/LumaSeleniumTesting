@@ -31,8 +31,6 @@ describe('Mousehover Test', function () {
     const actions = driver.actions({bridge: true}); 
      
     await actions.move({duration:3000,origin:Women,y:0}).perform();
-    
-    
 
     // Locate and click on the desired sub-menu item or category
     await driver.wait(until.elementLocated(By.xpath('//a[@id="ui-id-9"]')),5000);
