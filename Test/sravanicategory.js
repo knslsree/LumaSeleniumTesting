@@ -8,7 +8,7 @@ const expect = require('chai').expect;
   As a customer, 
   I want to be able to sort the product according to category
   so that I can get sorted product 
-*/v
+*/
 describe('Sort by Category', () => {
   // Test case:
 context('I searched for the category', () => {
