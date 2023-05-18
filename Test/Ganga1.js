@@ -36,23 +36,17 @@ describe ('select the product in dropdown menu in women category',async ()=>{
     await driver.wait(until.elementLocated(By.css('#product-addtocart-button')),1000);
     const Cart = await driver.findElement(By.css('#product-addtocart-button'));
     await Cart.click();
-   /*//Assert the cart message
-   await driver.wait(until.elementLocated(By.xpath('//div[@role="alert"]')),2000);
-   const CartMessage = await driver.findElement(By.xpath('//div[@role="alert"]'));
-   //Extract text
-   const CartMessageText= await CartMessage.getText();
-   console.log(CartMessageText);
-   CartMessageText.should.equals('You added Diva Gym Tee to your shopping cart.');*/
-   //Find the first product
+    //Find the fourth product
    await driver.wait(until.elementLocated(By.css('.base')),4000);
    const productTitle = await driver.findElement(By.css('.base'));
    //Extract text
    let productTitleText = await productTitle.getText();
    productTitleText.should.equal('Diva Gym Tee');
+   await driver.quit();
 }catch (error) {
     console.log(error);
 }finally{
-   // await driver.quit();
+   
 }
     });
   });

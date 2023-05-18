@@ -86,14 +86,14 @@ context('Search for the sorted category', () => {
         menBottoms.should.equal('Bottoms');// Chai should
                 
                 
-        //await driver.quit();
+        await driver.quit();
 
         }catch(error)
       {
         console.log(error);
       }
       finally{
-        await driver.quit();
+        //await driver.quit();
        }
    });
       });
