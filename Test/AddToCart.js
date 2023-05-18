@@ -69,7 +69,7 @@ const should = require('chai').should();
                                let display=await driver.findElement(By.css('.message-success')).getText();
                                console.log(display);
 
-                               display.should.equal('You added Breathe-Easy Tank to your shopping cart');
+                               display.should.equal('You added Breathe-Easy Tank to your shopping cart.');
                                await driver.quit();
 
                             }
