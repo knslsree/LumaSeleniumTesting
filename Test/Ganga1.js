@@ -43,7 +43,7 @@ describe ('select the product in dropdown menu in women category',async ()=>{
    const CartMessageText= await CartMessage.getText();
    console.log(CartMessageText);
    CartMessageText.should.equals('You added Diva Gym Tee to your shopping cart.');*/
-   //Find the first product
+   //Find the fourth product
    await driver.wait(until.elementLocated(By.css('.base')),4000);
    const productTitle = await driver.findElement(By.css('.base'));
    //Extract text
