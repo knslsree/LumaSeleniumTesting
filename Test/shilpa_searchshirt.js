@@ -56,6 +56,7 @@ describe('Search for a product', () => {
                 productPriceText.should.equal('$29.00'); // Chai should
 
                 console.log(productTitleText, productPriceText);
+                
 
             } catch (Exception) {
 

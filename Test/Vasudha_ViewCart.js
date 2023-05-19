@@ -19,10 +19,11 @@ const should = require('chai').should();
 
                                  // Navigate to women catogery
                                 //document.querySelector('.ui-menu >li :nth-child(2)').innerHTML--women  
-                                await driver.wait(until.elementLocated(By.css('.ui-menu')), 10000);
+                        await driver.wait(until.elementLocated(By.css('.ui-menu')), 10000);
                                 let val= await driver.findElement(By.css('.ui-menu'));
                                 let val1= await val.findElement(By.css('.ui-menu >li :nth-child(2)')).click();
                
+                      
                                  // navigating to category to home > women and selecting tops and using the ref navigating to desired page(tops-women)
                                 await driver.wait(until.elementLocated(By.css('.items')), 10000);
                                 let elemen = await driver.findElements(By.css('.items'));
@@ -70,7 +71,21 @@ const should = require('chai').should();
                                console.log(display);
 
                                display.should.equal('You added Breathe-Easy Tank to your shopping cart.');
-                               await driver.quit();
+
+await driver.findElement(By.className('action showcart')).click();
+
+await driver.wait(until.elementLocated(By.className('action viewcart')), 10000);
+
+await driver.findElement(By.className('action viewcart')).click();                            
+
+
+                               
+await driver.quit();
+
+
+                               
+                                 
+                               
 
                             }
                             finally{}
@@ -87,4 +102,4 @@ const should = require('chai').should();
 
 
 
-      
+     

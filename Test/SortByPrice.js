@@ -67,7 +67,7 @@ const expect = require('chai').expect;
                                        // console.log(sor);
 
                                        
-                                       //await driver.quit();
+                                       await driver.quit();
 
                             }
 
