@@ -68,7 +68,7 @@ describe('Mousehover Test', function () {
    console.log(CartMessageText);
    //assert.strictEqual(CartMessageText,'You added Diva Gym Tee to your shopping cart.');
    CartMessageText.should.equal('You added Diva Gym Tee to your shopping cart.');
-   await driver.quit();
+   //await driver.quit();
     
   });
 });
