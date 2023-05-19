@@ -1,5 +1,6 @@
 const { Builder, By, Key, until, Actions } = require('selenium-webdriver');
 const assert = require('assert');
+const should = require('chai').should();
 const actions = require('actions');
 
 
