@@ -32,7 +32,7 @@ describe('login test',() => {
                 let information = await driver.findElement(By.css('.box-information .box-content p')).getText();
                 
                // console.log(information.should.contain(user));
-               await driver.quit();
+               //await driver.quit();
 
              
             }
@@ -41,7 +41,7 @@ describe('login test',() => {
             }
             finally{
                
-                //await driver.quit();
+                await driver.quit();
             }
             
 
