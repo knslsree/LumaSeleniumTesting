@@ -5,6 +5,7 @@ require('dotenv').config();
 let user= process.env.USER;
 let pass= process.env.PASS;
 
+/* As a customer I want to validate the email id*/
 describe('login test',() => {
     context('I click on login and enter my credentials',()=>{
         it('I should be logged in and see my profile',async()=>{
